@@ -4,7 +4,7 @@ def main():
     print('Oldest Age: ', end='')
     for line in infile:
         line = line.rstrip()
-        list = line.split("")
+        list = line.split(" ")
     print(age)
 
 main()

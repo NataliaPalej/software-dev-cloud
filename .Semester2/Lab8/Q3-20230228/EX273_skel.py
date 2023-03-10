@@ -2,6 +2,8 @@ def main():
     infile = open('input3.txt', "r")
     outfile = open('output3.txt', "w")
     highest = 0
+    line = infile.readline()
+    line = infile.readline()
     print('Highest Overall Mark (CA + Exam) =: ', file=outfile, end='')
 
     for line in infile:

@@ -1,3 +1,6 @@
+# Ignore atm-python-app project from .Semester2 folder
+.Semester2/atm-python-app
+
 # Ignore python-project that has private repo
 python-project/
 
