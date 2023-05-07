@@ -12,9 +12,10 @@ class Lecturer:
     def updateOffice(self, office):
         self._office = office
 
+
 class Module(Lecturer):
     def __init__(self, title, topic, lecturer_name, lecturer_office):
-        super().__init__(self, lecturer_name, lecturer_office)
+        self._lecturer = Lecturer(lecturer_name, lecturer_office)
         self._topic = topic
         self._title = title
 
@@ -28,7 +29,7 @@ class Module(Lecturer):
         return self._topic
 
     def readLecturerName(self):
-        return self._lect_name
+        return self._lecturer.getName()
 
     def readLecturerOffice(self):
-        return self._office
+        return self._lecturer.getOffice()
